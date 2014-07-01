@@ -350,6 +350,9 @@
 	  (lambda ()
 	    (setq ac-sources '(ac-source-opsi ac-source-words-in-same-mode-buffers))))
 
+;; Ruby
+(add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'robe-mode-hook 'ac-robe-setup)
 
 ;; ,----
 ;; | Auto-Byte-Compile
