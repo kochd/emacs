@@ -301,12 +301,15 @@
 (global-set-key (kbd "M-_") 'redo)
 (setq undo-no-redo t)
 
+;; Yasnippet
+(global-set-key (kbd "<backtab>") 'yas-expand)
+
 ;; Eldoc
 (add-hook 'emacs-lisp-mode-hook
 	  '(lambda ()
 	     (eldoc-mode t)))
 
-;; ,----
+; ,----
 ;; |X-Clipboard Integration
 ;; `----
 (defun copy-to-x-clipboard ()
