@@ -274,6 +274,9 @@
 (add-hook 'flyspell-mode-hook (lambda () (auto-dictionary-mode 1)))
 
 
+;;; Flycheck
+(global-flycheck-mode t)
+
 ;;;;;;;;;;;;;;;;;
 ;; Keybindings ;;
 ;;;;;;;;;;;;;;;;;
