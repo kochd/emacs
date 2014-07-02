@@ -66,7 +66,6 @@
 ;     (color-theme-arjen)
 ;     (color-theme-solarized-dark)
 
-
 ;;Force colors ignoring the theme
 ;;e.g. background to be transparent
 ;(set-face-foreground 'default "white")
@@ -81,6 +80,8 @@
 ;; `----
 (set-face-attribute 'default nil :height 80 :family "Monospace" )
 
+; Cursor
+(blink-cursor-mode (- (*) (*) (*)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Settings and Modes ;;
